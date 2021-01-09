@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "jvjr --build && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "jvjr-build": "jvjr --build"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.8.2",
+    "dotenv": "^8.2.0",
+    "jvjr-docker-env": "^1.1.0-alpha",
     "vue": "^2.6.12"
   },
   "devDependencies": {
