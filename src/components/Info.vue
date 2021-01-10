@@ -23,8 +23,8 @@
     name: 'Info',
     data() {
       return {
-        info: null,
-        data: null,
+        info: {"hostname":"empty_hostname", "port":"empty_port"},
+        data: {"date_time":"empty_date_time"},
         frontend_hostname: this.$config.FRONTEND_HOSTNAME,
       };
     },
@@ -52,7 +52,7 @@
         })
         .catch(error => {
           console.log(error)
-          this.info = {"date_time":"empty_date_time"}
+          this.data = {"date_time":"empty_date_time"}
         })
       }
     }
