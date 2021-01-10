@@ -40,11 +40,19 @@
         .then(res => {
           this.info = res.data;
         })
+        .catch(error => {
+          console.log(error)
+          this.info = {"hostname":"empty_hostname", "port":"empty_port"}
+        })
 
       axios
         .get(this.$config.API_URL + '/date')
         .then(res => {
           this.data = res.data;
+        })
+        .catch(error => {
+          console.log(error)
+          this.info = {"date_time":"empty_date_time"}
         })
       }
     }
