@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    imagename = "devopstestaccount/gui"
+    imagename = "sikordev/gui"
     registryCredential = 'devopstestaccount-id'
     dockerImage = ''
   }
